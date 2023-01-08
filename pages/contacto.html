@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Don Alarcon</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/c0f8c041f4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); </style>
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav_container">
+                <h1 class="nav_logo">Don Alarcon</h1>
+                <label for="menu" class="nav_label">
+                    <img src="../assets/imagen/img-menu-hamburguesa.png" alt=""><!--menu hamburguesa-->
+                </label>
+                    <input type="checkbox" id="menu" class="nav_input">
+                        <ul class="nav_menu"> 
+                            <li>
+                                <a href="../index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="./lugar.html">Lugar</a>
+                            </li>
+                            <li>
+                                <a href="./servicios.html">Servicios</a>
+                            </li>
+                            <li>
+                                <a href="./ubicacion.html">Ubicacion</a>
+                            </li>
+                            <nav>
+                                <a href="#"class="btn"> <button>Contacto</button></a>
+                            </nav>
+                        </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="Contacto">
+        <form action="" method="post"><!--formulario-->
+            <fieldset> <!-- genera un recuadro(para mas estetica)-->
+                <legend> Datos Personales</legend>
+                    <label for="nombre"> <!--se pone "nombre" aca y en el id del input para asociarlos-->
+                        <span>Nombre</span><!--sirve para poner el nombre en el casillero-->
+                        <input type="text" name="" id="nombre"placeholder="Ingresa tu Nombre"required>
+                        <!-- el input determina el tipo de info, (le agregue el name y el id)-->
+                    </label><!-- recibe info-->
+                    <label for="apellido">
+                        <span>Apellido</span>
+                        <input type="text" name="" id="apellido"placeholder="Ingresa tu Apellido"required>
+                    </label>
+                    <label for="nacionalidad">
+                        <span>Nacionalidad</span>
+                        <input type="text" id="nacionalidad"placeholder="Ingresa tu Nacionalidad"required>
+                    </label>
+                    <label for="universidad">
+                        <span>Universidad</span>
+                        <input type="text" id="universidad"placeholder="Ingresa tu Universidad"required>
+                    </label>
+                    <label for="dia">
+                        <span>fecha de nacimiento</span>
+                        <input type="date" id="dia">
+                    </label> 
+        </div>
+<!--  label para una contraseña.
+                    <label for="contraseña">
+                        <span>Nombre</span>
+                        <input type="password" id="contraseña"required>
+                    </label> 
+-->
+<!-- label para el dia de nacimiento.
+                    <label for="dia">
+                        <span>fecha de nacimiento</span>
+                        <input type="date" id="dia">
+                    </label> 
+-->
+<!-- label para radioboton.
+                <div>
+                    <label for="">soy chico</label>
+                    <input type="radio" id="chico" name="edad" value="chico">
+                    <label for="">soy chico</label>
+                    <input type="radio" id="medio" name="edad" value="medio">
+                    <label for="">soy chico</label>
+                    <input type="radio" id="grande" name="edad" value="grande">
+                </div>
+ -->
+ <!-- label para checkbox
+                <div>
+                    <label for="acepta">enviar</label>
+                    input type="checkbox" id="acepta" name"acepta" value="1">
+                </div>
+-->
+<!-- un desplegable para elegir opciones.
+                <div>
+                    <label for="">que queres estudiar</label>
+                    <select name="fullstack" id="carrera">
+                        <option value="desarrollo">desarrollo web</option>
+                        <option value="javascript">javascript</option>
+                        <option value="react">react</option>
+                        <option value="backend">backend</option>
+                    </select>
+ -->
+<!-- 
+    input type="sumbit"
+ -->
+            </fieldset>
+        </form>
+        </div>
+            <div class="Contacto">
+                <h2>Contacto</h2>
+                <article>
+                    <img src="" alt=""><!--aca va una imagen de un telefono-->
+                        <div>
+                            <h3>Telefono</h3>
+                            <p>43724441</p>
+                        </div>
+                </article>
+                <article>
+                    <img src="" alt=""><!--aca va una imagen de un celular-->
+                        <div>
+                            <h3>Celular</h3>
+                            <p>1134309526</p>
+                        </div>
+                </article>
+                <article>
+                    <img src="" alt=""><!--aca va una imagen del instagram-->
+                        <div>
+                            <h3>instagram</h3>
+                            <p>residenciadonalarcon</p>
+                        </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="../assets/imagen/logo-don-alarcon.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="box__footer">
+                <div class="telefono_local">
+                    <h2>Telefono Local</h2>
+                        <h3>43724441</h3>
+                        <h3>Horario de atencion: Lunes a Viernes de 14hs/19hs</h3>
+                </div>
+            </div>
+
+            <div class="box__footer">
+                <div class="whatsapp">
+                    <h2>Whatsapp</h2>
+                        <h3>1134309526</h3>
+                        <h3>Horario de atencion: Lunes a Sabados de 10hs/20hs</h3>
+                </div>
+            </div>
+
+            <div class="box__footer">
+                <div class="redes_sociales">
+                    <h2>Redes Sociales</h2>
+                        <a href="https://www.facebook.com/residenciadonalarcon"target="_blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                        <a href="https://www.instagram.com/residenciadonalarcon"target="_blank"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
