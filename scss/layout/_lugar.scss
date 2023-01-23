@@ -9,16 +9,16 @@
     .contenedor_imagen{
         display: flex;
         width: 100%;
-        margin-top: 60px;
+        // margin-top: 60px;
         justify-content: space-around;
         flex-wrap: wrap;
         border-radius: 3px;
         height: 500px;
         .imagen{
-            width: 32%;
+            width: 100%;
             position: relative;
             height: 1050px;
-            margin-bottom: 50px;
+            margin-bottom: 5px;
             box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
             img{
                 width: 100%;
@@ -28,7 +28,7 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                background-color: #4a4a4a9a;
+                background-color: #4a4a4a57;
                 width: 100%;
                 height: 0;
                 overflow: hidden;
