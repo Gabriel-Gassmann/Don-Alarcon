@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center; }
     .nav .nav_container .nav_logo {
-      font-size: 8vh;
+      font-size: 6vh;
       font-weight: 800;
       padding-left: 10px;
       font-family: 'Inter', sans-serif;
@@ -158,7 +158,6 @@ main {
       width: 100%;
       height: 0;
       overflow: hidden;
-      transition: .1 ease;
       color: aliceblue;
       font-family: "Comfortaa", cursive; }
       .galeria .contenedor_imagen .imagen .overlay h2 {
@@ -173,7 +172,8 @@ main {
 
 .galeria .imagen:hover .overlay {
   height: 100%;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: .1 ease; }
 
 .servicios {
   height: 100%;
@@ -273,6 +273,8 @@ body {
     clip-path: circle(100% at center);
     /*para cuando apretas la hamburguesa, aparezca el menu*/ }
   /*responsive para la imagen del html "lugar"*/
+  .contenedor_imagen {
+    width: 90%; }
   /*responsive para el html "servicios"*/
   .servicios .descripcion_servicios {
     font-size: 35px; }
@@ -291,7 +293,12 @@ body {
     font-size: 30px; }
   /*responsive para el html "servicios"*/
   .servicios .descripcion_servicios {
-    font-size: 30px; } }
+    font-size: 30px; }
+  /*responsive para el html "lugar*/
+  .contenedor_imagen {
+    width: 80%; }
+    .contenedor_imagen .imagen {
+      width: 48%; } }
 
 /*------------------------------------------------------------------responsive Mobile----------------------------------------------------------*/
 @media (max-width: 576px) {
@@ -305,6 +312,12 @@ body {
   /*responsive para el html "servicios"*/
   .servicios .descripcion_servicios {
     font-size: 25px; } }
+
+/*responsive para el html "lugar"*/
+.contenedor_imagen {
+  width: 90%; }
+  .contenedor_imagen .imagen {
+    width: 80%; }
 
 /*---------------------------------------------------------para mobile con menos de 375px de ancho-----------------------------------*/
 @media (max-width: 360px) {

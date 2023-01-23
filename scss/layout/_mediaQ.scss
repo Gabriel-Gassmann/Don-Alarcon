@@ -25,7 +25,9 @@
     }
 
 /*responsive para la imagen del html "lugar"*/
-
+    .contenedor_imagen{
+        width: 90%;
+    }
 
 /*responsive para el html "servicios"*/
     .servicios .descripcion_servicios{
@@ -54,7 +56,13 @@
     .servicios .descripcion_servicios{
         font-size: 30px;
     }
-
+/*responsive para el html "lugar*/
+    .contenedor_imagen{
+        width: 80%;
+        .imagen{
+            width: 48%;
+        }
+    }
 }
 /*------------------------------------------------------------------responsive Mobile----------------------------------------------------------*/
 @media (max-width: 576px){
@@ -78,6 +86,13 @@
 
 }
 
+/*responsive para el html "lugar"*/
+    .contenedor_imagen{
+        width: 90%;
+        .imagen{
+            width: 80%;
+        }
+    }
 /*---------------------------------------------------------para mobile con menos de 375px de ancho-----------------------------------*/
 
 @media (max-width: 360px){
