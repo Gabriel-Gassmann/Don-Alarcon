@@ -1,323 +1,196 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*color: rgba(131, 9, 9, 1);*/
-}
-body{
-    width: 100%;
-    background-image: linear-gradient(to left bottom, #ff3131, #f12a28, #e4221f, #d61a17, #c9100d, #be0c0a, #b20808, #a70506, #9b080a, #8f0c0d, #840e0f, #781010);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Playfair Display', serif;
-}
-/*------------------------------------------------------------------NavBar--------------------------------------------------------------------*/
-.nav{
-    background: rgba(131, 9, 9, 1);
-    height: 80px;
-    color: aliceblue;
-}
-.nav_container{
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Playfair+Display:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Playfair+Display:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter:wght@500&family=Playfair+Display:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.nav {
+  background: #830909;
+  height: 10vh;
+  color: aliceblue; }
+  .nav .nav_container {
     display: flex;
     height: 100%;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     justify-content: space-between;
-    align-items: center;
-}
-.nav_logo{
-    font-size: 40px;
-    font-weight: 800;
-}
+    align-items: center; }
+    .nav .nav_container .nav_logo {
+      font-size: 8vh;
+      font-weight: 800;
+      padding-left: 10px;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Playfair Display', serif; }
+    .nav .nav_container .nav_label, .nav .nav_container .nav_input {
+      display: none;
+      padding: 10px; }
+    .nav .nav_container .nav_menu {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 20px;
+      list-style: none;
+      /*le saca los puntitos*/
+      margin-top: 10px;
+      /* boton de "contacto" */ }
+      .nav .nav_container .nav_menu li a {
+        color: aliceblue;
+        text-decoration: none;
+        /*le saca el subrayado*/
+        font-size: 5vh;
+        /*cuan grande es la letra*/
+        font-family: "Comfortaa", cursive; }
+      .nav .nav_container .nav_menu li a:hover {
+        color: #FFF; }
+      .nav .nav_container .nav_menu .btn button {
+        font-family: "Comfortaa", cursive;
+        font-size: 5vh;
+        font-weight: 35px;
+        color: aliceblue;
+        padding: 5px 25px;
+        background: #781010;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s; }
+      .nav .nav_container .nav_menu .btn button:hover {
+        background-color: aliceblue;
+        color: #e4221f;
+        transform: scale(1.1); }
 
-.nav_menu{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 20px;
-    list-style: none;/*le saca los puntitos*/
-    margin-top: 10px;
-}
-.nav_menu li a{
-    color: aliceblue;
-    text-decoration: none;/*le saca el subrayado*/
-    font-family: 'Inter', sans-serif;
-    font-family: 'Playfair Display', serif;/*tipo de letra*/
-    font-size: 30px;/*cuan grande es la letra*/
-}
-.nav_menu li a:hover{
-    color: #FFF;
-}
+.nav_item {
+  text-decoration: none;
+  color: aliceblue; }
 
-.nav_item{
-    text-decoration: none;
-    color: aliceblue;
-}
+body {
+  background-image: linear-gradient(to left bottom, #ff3131, #f12a28, #e4221f, #d61a17, #c9100d, #be0c0a, #b20808, #a70506, #9b080a, #8f0c0d, #840e0f, #781010);
+  font-family: 'Playfair Display', serif;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
-.nav_label, .nav_input{
-    display: none;
-    padding: 10px;
-}
-
-/* boton de "contacto" */
-.nav_menu .btn button{
-    font-family: 'Inter', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    font-weight: 35px;
-    color: aliceblue;
-    padding: 9px 25px;
-    background: #781010;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-.nav_menu .btn button:hover{
-    background-color: aliceblue;
-    color: #e4221f;
-    transform: scale(1.1);
-}
-/*----------------------------------------------------------------inicio---------------------------------------------------------------*/
-
-main{
+main {
+  width: 100%;
+  height: 100vh; }
+  main section img {
     width: 100%;
-    height: 80%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-main section img{
-    width: 100%;
-    height: calc(100vh - 80px);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    height: 100%; }
 
-
-/*----------------------------------------------------Contacto----------------------------------------------------------*/
-
-.Contacto{
-    justify-content: flex-start;
+footer {
+  margin-top: auto; }
+  footer .container__footer {
     display: flex;
-    gap: 30px;
-    color: aliceblue;
-}
-
-/*----------------------------------------------------Servicios---------------------------------------------------------*/
-
-.servicios{
-    height: 100%;
-    color: aliceblue;
-    font-size: 40px;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Playfair Display', serif;
-    padding: 10px;
-}
-/* .Servicios{
-    gap: 30px;
-    font-size: 25px;
-    color: aliceblue;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Playfair Display', serif;
-    margin-left: 5px;
-    width: 50%;
-    margin-top: 50px;
-}
-.ContamosCon{
-    display: flex;
-    font-size: 40px;
-    gap: 200px;
-    margin-top: 25px;
-    color: aliceblue;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Playfair Display', serif;
-    height: 50px; */
-
-
-/*-----------------------------------------------------Ubicacion--------------------------------------------------------*/
-.ubicacion{
-display: flex;
-width: 100%;
-flex-flow: row wrap;
-}
-.cercanias_info{
     width: 100%;
-    font-family: 'Inter', sans-serif;
+    height: 20vh;
     font-family: 'Playfair Display', serif;
-    width: 80vh;
-    padding: 20px;
-    font-size: 35px;
+    background-color: #470000;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-around; }
+    footer .container__footer .box__footer .logo img {
+      padding-top: 20px;
+      width: 100px; }
+    footer .container__footer .box__footer h2 {
+      font-size: 6vh;
+      padding-top: 20px;
+      margin-bottom: 5px;
+      color: aliceblue;
+      font-weight: 200;
+      font-family: "Comfortaa", cursive; }
+    footer .container__footer .box__footer h3 {
+      font-size: 2.5vh;
+      margin-top: 5px;
+      color: aliceblue;
+      font-weight: 400;
+      font-family: "Comfortaa", cursive; }
+    footer .container__footer .box__footer a:hover {
+      /*logo de Redes Sociales*/
+      opacity: 0.8; }
+    footer .container__footer .box__footer a {
+      font-size: 4vh;
+      color: aliceblue; }
+
+main {
+  background-image: linear-gradient(to left bottom, #ff3131, #f12a28, #e4221f, #d61a17, #c9100d, #be0c0a, #b20808, #a70506, #9b080a, #8f0c0d, #840e0f, #781010);
+  width: 100%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  main main section img {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.servicios {
+  height: 100%;
+  padding: 10px;
+  background-image: linear-gradient(to left bottom, #ff3131, #f12a28, #e4221f, #d61a17, #c9100d, #be0c0a, #b20808, #a70506, #9b080a, #8f0c0d, #840e0f, #781010); }
+  .servicios .descripcion_servicios p {
     color: aliceblue;
-}
-.google_map{
+    font-size: 6vh;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Playfair Display', serif; }
+
+.main {
+  height: 100%; }
+
+.ubicacion {
+  background-image: linear-gradient(to left bottom, #ff3131, #f12a28, #e4221f, #d61a17, #c9100d, #be0c0a, #b20808, #a70506, #9b080a, #8f0c0d, #840e0f, #781010);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap; }
+  .ubicacion .google_map {
     padding-top: 20px;
     padding-bottom: 5px;
     padding-left: 10px;
-}
-
-/*-------------------------------------------------------Lugar----------------------------------------------------------*/
-
-/* .container_lugar{
-    display: grid;
-    width: 100%;
-    grid-template-rows: repeat(6, 650px); */
-    /*grid-template-columns: repeat (3,200px) 1fr 1fr 1fr;*/
-    /*grid-template-columns: repeat(6,1fr);*/
-    /*grid-template-areas:
-    "item1"
-    "item2"
-    "item3"
-    "item4"
-    "item5"
-    "item6"
-    ;
-} */
-/* .container_lugar div{
-    position:relative;
-    overflow: hidden;
-}
-.container_lugar div p{
-    position: absolute;
-    top: 85%;
-    font-size: 50px;
-    color: aliceblue;
-    margin-left: 30px;
-    margin-top: 30px;
-    font-family: 'Inter', sans-serif;
+    width: 45%; }
+  .ubicacion .cercanias_info {
     font-family: 'Playfair Display', serif;
-} */
-.container_galeria{
-    height: calc(100vh - 80px);
-}
-/*-------------------------------------------------------Footer----------------------------------------------------------*/
+    padding-top: 10px;
+    padding-left: 60px;
+    font-size: 5vh;
+    color: aliceblue;
+    padding-bottom: 10px; }
 
-.container__footer{
-    
-    font-family: 'Inter', sans-serif;
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: space-around;
+.Contacto {
+  height: 80%;
+  width: 100%; }
+
+.container_contacto {
+  display: flex; }
+  .container_contacto .formulario {
     width: 100%;
-    padding: 20px;
-    background-color: rgba(71, 0, 0, 1);
-    bottom: 0;
-    flex-direction: row;
-}
-
-.box__footer{
     display: flex;
-    flex-direction: column;
-}
+    justify-content: center;
+    align-items: center; }
+    .container_contacto .formulario .datos_personales {
+      font-family: "Comfortaa", cursive;
+      justify-content: center;
+      align-items: center;
+      color: aliceblue;
+      font-size: 40px; }
+    .container_contacto .formulario .datos {
+      font-size: 10vh;
+      color: aliceblue;
+      font-family: "Comfortaa", cursive;
+      font-size: 20px; }
+    .container_contacto .formulario .text_area {
+      max-width: 400px;
+      max-height: 200px;
+      font-size: 20px;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Playfair Display', serif;
+      padding-right: 30px; }
+    .container_contacto .formulario .fieldset .id {
+      color: aliceblue; }
 
-.box__footer .logo img{
-    width: 120px;
-}
-.box__footer h2{
-    margin-bottom: 30px;
-    color: aliceblue;
-    font-weight: 200;
-}
-
-.box__footer h3{
-    margin-top: 5px;
-    color: aliceblue;
-    font-weight: 400;
-}
-/* Logo de Redes Sociales */
-.box__footer a:hover{
-    opacity: 0.8;
-}
-.box__footer a{
-    color: aliceblue;
-}
-/* --------------------------------------------------------Responsive NavBar----------------------------------------------------------- */
-/*responsive para el menu hamburguesa*/
-@media (max-width: 992px){
-    .nav_label{
-        display: block;
-        cursor: pointer;
-    }
-
-    .nav_menu{
-        position: fixed;
-        top: 80px;
-        bottom: 0;
-        background: #ff3131;
-        width: 100%;
-        left: 0;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        clip-path:circle(0 at center);/*para que desaparezca el menu*/
-        transition: clip-path 0.7s ease-in-out;
-        position: absolute;
-    }
-    .nav_input:checked + .nav_menu{
-        clip-path: circle(100% at center);/*para cuando apretas la hamburguesa, aparezca el menu*/
-    }
-
-/*responsive para el html "servicios"*/
-    .servicios .descripcion_servicios{
-        font-size: 35px;
-    }
-
-/*responsive para el html "ubicacion"*/
-    .google_map iframe{
-        width: 750px;
-        height: 500px;
-        }
-}
-/*-----------------------------------------------------------------Responsive para Tablet-----------------------------------------------------*/
-@media (max-width: 768px){
-
-/*responsive para el html "ubicacion"*/
-    .google_map iframe{
-        width: 560px;
-        height: 400px;
-    }
-    .cercanias_info{
-        font-size: 30px;
-    }
-
-/*responsive para el html "servicios"*/
-    .servicios .descripcion_servicios{
-        font-size: 30px;
-    }
-
-}
-/*------------------------------------------------------------------responsive Mobile----------------------------------------------------------*/
-@media (max-width: 576px){
-
-/*responsive para el html de "inicio*/
-
-
-/*responsive para el html "ubicacion"*/
-    .google_map iframe{
-        width: 345px;
-        height: 300px;
-        }
-    .cercanias_info{
-        font-size: 25px;
-        }
-
-/*responsive para el html "servicios"*/
-    .servicios .descripcion_servicios{
-        font-size: 25px;
-    }
-
-}
-
-/*-------------------------------------------------------------------para mobile con menos de 375px de ancho-----------------------------------*/
-
-@media (max-width: 360px){
-    /*responsive para el html "ubicacion"*/
-    .google_map iframe{
-        width: 250px;
-        font-size: 20px;
-    }
-
-}
+.fondo_contacto {
+  width: 100%;
+  padding-right: 20px;
+  padding-top: 20px; }

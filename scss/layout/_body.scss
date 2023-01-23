@@ -1,0 +1,11 @@
+body{
+    background-image: linear-gradient(to left bottom, #ff3131, #f12a28, #e4221f, #d61a17, #c9100d, #be0c0a, #b20808, #a70506, #9b080a, #8f0c0d, #840e0f, #781010);
+    font-family: 'Playfair Display', serif;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

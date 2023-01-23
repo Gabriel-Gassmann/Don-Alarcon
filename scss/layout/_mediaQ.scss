@@ -1,0 +1,90 @@
+/*responsive para el menu hamburguesa*/
+@media (max-width: 992px){
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav_menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: #840e0f;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path:circle(0 at center);/*para que desaparezca el menu*/
+        transition: clip-path 0.7s ease-in-out;
+        position: absolute;
+    }
+    .nav_input:checked + .nav_menu{
+        clip-path: circle(100% at center);/*para cuando apretas la hamburguesa, aparezca el menu*/
+    }
+
+/*responsive para la imagen del html "lugar"*/
+
+
+/*responsive para el html "servicios"*/
+    .servicios .descripcion_servicios{
+        font-size: 35px;
+    }
+
+/*responsive para el html "ubicacion"*/
+    .google_map iframe{
+        width: 750px;
+        height: 500px;
+        }
+}
+/*-----------------------------------------------------------------Responsive para Tablet-----------------------------------------------------*/
+@media (max-width: 768px){
+
+/*responsive para el html "ubicacion"*/
+    .google_map iframe{
+        width: 560px;
+        height: 400px;
+    }
+    .cercanias_info{
+        font-size: 30px;
+    }
+
+/*responsive para el html "servicios"*/
+    .servicios .descripcion_servicios{
+        font-size: 30px;
+    }
+
+}
+/*------------------------------------------------------------------responsive Mobile----------------------------------------------------------*/
+@media (max-width: 576px){
+
+/*responsive para el html de "inicio*/
+
+
+/*responsive para el html "ubicacion"*/
+    .google_map iframe{
+        width: 345px;
+        height: 300px;
+        }
+    .cercanias_info{
+        font-size: 25px;
+        }
+
+/*responsive para el html "servicios"*/
+    .servicios .descripcion_servicios{
+        font-size: 25px;
+    }
+
+}
+
+/*---------------------------------------------------------para mobile con menos de 375px de ancho-----------------------------------*/
+
+@media (max-width: 360px){
+    /*responsive para el html "ubicacion"*/
+    .google_map iframe{
+        width: 250px;
+        font-size: 20px;
+    }
+
+}

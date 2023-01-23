@@ -1,0 +1,49 @@
+.Contacto{
+    height: 80%;
+    width: 100%;
+    }
+    .container_contacto{
+        display: flex;
+
+
+        .formulario{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .datos_personales{
+                font-family: $tipografia-principal;
+                justify-content: center;
+                align-items: center;
+                color: aliceblue;
+                // font-family: 'Inter', sans-serif;
+                // font-family: 'Playfair Display', serif;
+                font-size: 40px;
+            }
+            .datos{
+                font-size: 10vh;
+                color: aliceblue;
+                // font-family: 'Inter', sans-serif;
+                // font-family: 'Playfair Display', serif;
+                font-family: $tipografia-principal;
+                font-size: 20px;
+            }
+            .text_area{
+                max-width: 400px;
+                max-height: 200px;
+                font-size: 20px;
+                font-family: 'Inter', sans-serif;
+                font-family: 'Playfair Display', serif;
+                padding-right: 30px;
+            }
+            .fieldset .id{
+                color: aliceblue;
+                }
+        }
+    }
+    .fondo_contacto{
+        width: 100%;
+        padding-right: 20px;
+        padding-top: 20px;
+    }

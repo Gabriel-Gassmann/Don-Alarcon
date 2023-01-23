@@ -1,0 +1,68 @@
+.nav{
+    background: rgba(131, 9, 9, 1);
+    height: 10vh;
+    color: aliceblue;
+    .nav_container{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav_logo{
+            font-size: 8vh;
+            font-weight: 800;
+            padding-left: 10px;
+            font-family: 'Inter', sans-serif;
+            font-family: 'Playfair Display', serif;
+        }
+        .nav_label, .nav_input{
+            display: none;
+            padding: 10px;
+        }
+        .nav_menu{
+
+            display: grid;
+            grid-auto-flow: column;
+            gap: 20px;
+            list-style: none;/*le saca los puntitos*/
+            margin-top: 10px; 
+                li a{
+                    color: aliceblue;
+                    text-decoration: none;/*le saca el subrayado*/
+                    font-size: 5vh;/*cuan grande es la letra*/
+                    font-family: $tipografia-principal;
+                    ;
+                }
+
+                li a:hover{
+                    color: #FFF;
+                }
+                /* boton de "contacto" */
+                .btn button{
+                    font-family: $tipografia-principal;
+                    font-size: 5vh;
+                    font-weight: 35px;
+                    color: aliceblue;
+                    
+                    padding: 5px 25px;
+                    background: #781010;
+                    border: none;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    transition: all 0.3s ease 0s;
+                    }
+                .btn button:hover{
+                    background-color: aliceblue;
+                    color: #e4221f;
+                    transform: scale(1.1);
+                    }
+            }
+    }
+
+}
+
+.nav_item{
+    text-decoration: none;
+    color: aliceblue;
+}
