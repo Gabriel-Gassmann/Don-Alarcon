@@ -19,31 +19,38 @@
                 color: aliceblue;
                 // font-family: 'Inter', sans-serif;
                 // font-family: 'Playfair Display', serif;
-                font-size: 40px;
+                font-size: 8vh;
             }
             .datos{
-                font-size: 10vh;
                 color: aliceblue;
                 // font-family: 'Inter', sans-serif;
                 // font-family: 'Playfair Display', serif;
                 font-family: $tipografia-principal;
-                font-size: 20px;
+                font-size: 4vh;
             }
             .text_area{
-                max-width: 400px;
-                max-height: 200px;
-                font-size: 20px;
+                min-width: 2000px;
+                max-width: 2000px;
+                max-height: 800px;
+                min-height: 800px;
+                font-size: 4vh;
                 font-family: 'Inter', sans-serif;
                 font-family: 'Playfair Display', serif;
                 padding-right: 30px;
             }
+            button{
+                font-size: 3vh;
+            }
             .fieldset .id{
                 color: aliceblue;
+                }
+                input{
+                    font-size: 4vh;
                 }
         }
     }
     .fondo_contacto{
-        width: 100%;
+        width: 50%;
         padding-right: 20px;
         padding-top: 20px;
     }

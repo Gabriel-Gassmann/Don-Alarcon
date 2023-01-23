@@ -28,7 +28,7 @@
     .nav .nav_container .nav_menu {
       display: grid;
       grid-auto-flow: column;
-      gap: 20px;
+      gap: 60px;
       list-style: none;
       /*le saca los puntitos*/
       margin-top: 10px;
@@ -85,15 +85,16 @@ footer {
   footer .container__footer {
     display: flex;
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     font-family: 'Playfair Display', serif;
     background-color: #470000;
     flex-wrap: wrap;
     justify-content: space-between;
     justify-content: space-around; }
     footer .container__footer .box__footer .logo img {
-      padding-top: 20px;
-      width: 100px; }
+      padding-top: 3vh;
+      width: 12vh;
+      height: 12vh; }
     footer .container__footer .box__footer h2 {
       font-size: 6vh;
       padding-top: 20px;
@@ -117,7 +118,7 @@ footer {
 main {
   background-image: linear-gradient(to left bottom, #ff3131, #f12a28, #e4221f, #d61a17, #c9100d, #be0c0a, #b20808, #a70506, #9b080a, #8f0c0d, #840e0f, #781010);
   width: 100%;
-  height: 80%;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover; }
   main main section img {
@@ -125,6 +126,54 @@ main {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover; }
+
+.galeria h1 {
+  text-align: center;
+  margin: 20px 0 15px 0;
+  font-weight: 300;
+  font-size: 4vh;
+  color: aliceblue; }
+
+.galeria .contenedor_imagen {
+  display: flex;
+  width: 100%;
+  margin-top: 60px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px; }
+  .galeria .contenedor_imagen .imagen {
+    width: 32%;
+    position: relative;
+    height: 1050px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75); }
+    .galeria .contenedor_imagen .imagen img {
+      width: 100%;
+      height: 100%; }
+    .galeria .contenedor_imagen .imagen .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #4a4a4a9a;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: .1 ease;
+      color: aliceblue;
+      font-family: "Comfortaa", cursive; }
+      .galeria .contenedor_imagen .imagen .overlay h2 {
+        color: aliceblue;
+        font-size: 2vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        font-weight: 1000; }
+
+.galeria .imagen:hover .overlay {
+  height: 100%;
+  cursor: pointer; }
 
 .servicios {
   height: 100%;
@@ -136,8 +185,8 @@ main {
     font-family: 'Inter', sans-serif;
     font-family: 'Playfair Display', serif; }
 
-.main {
-  height: 100%; }
+body {
+  height: 80vh; }
 
 .ubicacion {
   background-image: linear-gradient(to left bottom, #ff3131, #f12a28, #e4221f, #d61a17, #c9100d, #be0c0a, #b20808, #a70506, #9b080a, #8f0c0d, #840e0f, #781010);
@@ -174,23 +223,92 @@ main {
       justify-content: center;
       align-items: center;
       color: aliceblue;
-      font-size: 40px; }
+      font-size: 8vh; }
     .container_contacto .formulario .datos {
-      font-size: 10vh;
       color: aliceblue;
       font-family: "Comfortaa", cursive;
-      font-size: 20px; }
+      font-size: 4vh; }
     .container_contacto .formulario .text_area {
-      max-width: 400px;
-      max-height: 200px;
-      font-size: 20px;
+      min-width: 2000px;
+      max-width: 2000px;
+      max-height: 800px;
+      min-height: 800px;
+      font-size: 4vh;
       font-family: 'Inter', sans-serif;
       font-family: 'Playfair Display', serif;
       padding-right: 30px; }
+    .container_contacto .formulario button {
+      font-size: 3vh; }
     .container_contacto .formulario .fieldset .id {
       color: aliceblue; }
+    .container_contacto .formulario input {
+      font-size: 4vh; }
 
 .fondo_contacto {
-  width: 100%;
+  width: 50%;
   padding-right: 20px;
   padding-top: 20px; }
+
+/*responsive para el menu hamburguesa*/
+@media (max-width: 992px) {
+  .nav_label {
+    display: block;
+    cursor: pointer; }
+  .nav_menu {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background: #840e0f;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    /*para que desaparezca el menu*/
+    transition: clip-path 0.7s ease-in-out;
+    position: absolute; }
+  .nav_input:checked + .nav_menu {
+    clip-path: circle(100% at center);
+    /*para cuando apretas la hamburguesa, aparezca el menu*/ }
+  /*responsive para la imagen del html "lugar"*/
+  /*responsive para el html "servicios"*/
+  .servicios .descripcion_servicios {
+    font-size: 35px; }
+  /*responsive para el html "ubicacion"*/
+  .google_map iframe {
+    width: 750px;
+    height: 500px; } }
+
+/*-----------------------------------------------------------------Responsive para Tablet-----------------------------------------------------*/
+@media (max-width: 768px) {
+  /*responsive para el html "ubicacion"*/
+  .google_map iframe {
+    width: 560px;
+    height: 400px; }
+  .cercanias_info {
+    font-size: 30px; }
+  /*responsive para el html "servicios"*/
+  .servicios .descripcion_servicios {
+    font-size: 30px; } }
+
+/*------------------------------------------------------------------responsive Mobile----------------------------------------------------------*/
+@media (max-width: 576px) {
+  /*responsive para el html de "inicio*/
+  /*responsive para el html "ubicacion"*/
+  .google_map iframe {
+    width: 345px;
+    height: 300px; }
+  .cercanias_info {
+    font-size: 25px; }
+  /*responsive para el html "servicios"*/
+  .servicios .descripcion_servicios {
+    font-size: 25px; } }
+
+/*---------------------------------------------------------para mobile con menos de 375px de ancho-----------------------------------*/
+@media (max-width: 360px) {
+  /*responsive para el html "ubicacion"*/
+  .google_map iframe {
+    width: 250px;
+    font-size: 20px; } }

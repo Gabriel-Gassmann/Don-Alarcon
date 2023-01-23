@@ -6,7 +6,7 @@ margin-top: auto;
     // position: absolute;
     // bottom: 0;
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     font-family: 'Playfair Display', serif;
     background-color: rgba(71, 0, 0, 1);
     flex-wrap: wrap;
@@ -14,8 +14,9 @@ margin-top: auto;
     justify-content: space-around;
     .box__footer{
         .logo img{
-            padding-top: 20px;
-            width: 100px;
+            padding-top: 3vh;
+            width: 12vh;
+            height: 12vh;
         }
         h2{
             font-size: 6vh;
