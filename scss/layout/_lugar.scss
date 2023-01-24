@@ -1,11 +1,4 @@
 .galeria{
-        h1{
-        text-align: center;
-        margin: 20px 0 15px 0;
-        font-weight: 300;
-        font-size: 4vh;
-        color: aliceblue;
-    }
     .contenedor_imagen{
         display: flex;
         width: 100%;
@@ -17,7 +10,7 @@
         .imagen{
             width: 100%;
             position: relative;
-            height: 1050px;
+            height: 700px;
             margin-bottom: 5px;
             box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
             img{
@@ -37,7 +30,7 @@
                 font-family: $tipografia-principal;
                 h2{
                     color: aliceblue;
-                    font-size: 2vh;
+                    font-size: 40px;
                     position: absolute;
                     top: 50%;
                     left: 50%;
