@@ -283,7 +283,7 @@ main {
   .ubicacion .google_map {
     width: 60%; }
   .google_map iframe {
-    width: 1250px;
+    width: 1000px;
     height: 800px; } }
 
 @media (max-width: 2160px) {
@@ -296,7 +296,7 @@ main {
   .ubicacion .google_map {
     width: 60%; }
   .google_map iframe {
-    width: 1000px;
+    width: 800px;
     height: 700px; }
   /*responsive para el html "inicio"*/
   .texto-inicio h1 {
@@ -319,7 +319,7 @@ main {
   .ubicacion .google_map {
     width: 60%; }
   .google_map iframe {
-    width: 800px;
+    width: 725px;
     height: 600px; }
   /*responsive para el html de "servicios"*/
   .servicios .descripcion_servicios p {
@@ -343,7 +343,7 @@ main {
     font-size: 40px;
     width: 50%; }
   .google_map iframe {
-    width: 1000px;
+    width: 650px;
     height: 650px; }
   .ubicacion .google_map {
     width: 60%; }
