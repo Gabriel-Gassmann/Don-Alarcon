@@ -1,3 +1,9 @@
+@media (max-width: 3000px){
+    .texto-inicio img {
+        display: none;
+    }
+
+}
 @media (max-width: 2560px){/*---------------------4K---------------------------*/
 /*responsive para el html "inicio"*/
     .texto-inicio h1 {
@@ -33,7 +39,7 @@
         width: 60%;   
     }
     .google_map iframe {
-        width: 1000px;
+        width: 900px;
         height: 800px;
         }
 }
@@ -98,19 +104,26 @@
             height: 600px;
         }
 }
+/*responsive para el html de "contacto"*/
+    .fondo_contacto{
+        height: 800px;
+    }
 }
 @media (max-width:1440px){/*---------------------HD---------------------------*/
+    body{
+        min-height: 120vh;
+    }
 /*responsive para el html de "ubicacion"*/    
     .ubicacion .cercanias_info p{
-        font-size: 40px;
+        font-size: 35px;
     }
     .ubicacion .cercanias_info{
         font-size: 40px;
         width: 50%;
     }
     .google_map iframe {
-        width: 650px;
-        height: 650px;
+        width: 750px;
+        height: 600px;
     }
     .ubicacion .google_map{
         width: 60%;
@@ -127,6 +140,10 @@
         height: 500px;
     }
 }
+/*responsive para el html de "contacto"*/
+    .fondo_contacto{
+        height: 650px;
+    }
 }
 @media (max-width: 1200px){/*-------------------------------------------------*/
 /*responsive para el html"Servicios"*/
@@ -137,8 +154,8 @@
 @media (max-width: 1100px){/*-------------------------------------------------*/
 /*responsive para el html de "ubicacion"*/    
 .google_map iframe {
-    width: 950px;
-    height: 650px;
+    width: 650px;
+    height: 500px;
 }
 }
 /*responsive para el menu hamburguesa*/
@@ -188,11 +205,11 @@
         }
     .ubicacion .cercanias_info{
         width: 100%;
-        font-size: 25px;
+        font-size: 40px;
     }
     .ubicacion .cercanias_info p {
         width: 100%;
-        font-size: 25px;
+        font-size: 35px;
     }
     
 /*responsive para el html "contacto*/
@@ -267,7 +284,12 @@
         width: 160%;
         height: 400px;
         }
-
+        .ubicacion .cercanias_info{
+            font-size: 35px;
+        }
+        .ubicacion .cercanias_info p {
+            font-size: 30px;
+        }
 /*responsive para el html "servicios"*/
 .servicios .descripcion_servicios p {
     font-size: 25px;
@@ -303,17 +325,25 @@
         height: 80px;
     }
 }
-
-
-/*---------------------------------------------------------para mobile con menos de 375px de ancho-----------------------------------*/
-
-@media (max-width: 360px){
+@media (max-width: 414px){/*-------------------------------------------------*/
 /*responsive para el html "ubicacion"*/
     .ubicacion .cercanias_info {
-    font-size: 20px;
+    font-size: 25px;
     }
     .ubicacion .cercanias_info p {
-        font-size: 15px;
+        font-size: 20px;
+    }
+    
+}
+/*---------------------------------------------------------para mobile con menos de 375px de ancho-----------------------------------*/
+
+@media (max-width: 375px){
+/*responsive para el html "ubicacion"*/
+    .ubicacion .cercanias_info {
+    font-size: 16px;
+    }
+    .ubicacion .cercanias_info p {
+        font-size: 16px;
     }
 /*responsive para el html "servicios"*/
     .servicios .descripcion_servicios p {

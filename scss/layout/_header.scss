@@ -9,12 +9,15 @@
         justify-content: space-between;
         align-items: center;
 
-        .nav_logo{
+        .nav_logo {
             font-size: 30px;
             font-weight: 800;
             padding-left: 10px;
             font-family: 'Inter', sans-serif;
             font-family: 'Playfair Display', serif;
+            color: aliceblue;
+            list-style: none;
+            text-decoration: none;
         }
         .nav_label, .nav_input{
             display: none;

@@ -21,7 +21,10 @@
       font-weight: 800;
       padding-left: 10px;
       font-family: 'Inter', sans-serif;
-      font-family: 'Playfair Display', serif; }
+      font-family: 'Playfair Display', serif;
+      color: aliceblue;
+      list-style: none;
+      text-decoration: none; }
     .nav .nav_container .nav_label, .nav .nav_container .nav_input {
       display: none;
       padding: 10px; }
@@ -256,6 +259,10 @@ main {
   padding-right: 20px;
   padding-top: 20px; }
 
+@media (max-width: 3000px) {
+  .texto-inicio img {
+    display: none; } }
+
 @media (max-width: 2560px) {
   /*---------------------4K---------------------------*/
   /*responsive para el html "inicio"*/
@@ -283,7 +290,7 @@ main {
   .ubicacion .google_map {
     width: 60%; }
   .google_map iframe {
-    width: 1000px;
+    width: 900px;
     height: 800px; } }
 
 @media (max-width: 2160px) {
@@ -332,19 +339,24 @@ main {
     width: 90%; }
     .galeria .contenedor_imagen .imagen {
       width: 100%;
-      height: 600px; } }
+      height: 600px; }
+  /*responsive para el html de "contacto"*/
+  .fondo_contacto {
+    height: 800px; } }
 
 @media (max-width: 1440px) {
   /*---------------------HD---------------------------*/
+  body {
+    min-height: 120vh; }
   /*responsive para el html de "ubicacion"*/
   .ubicacion .cercanias_info p {
-    font-size: 40px; }
+    font-size: 35px; }
   .ubicacion .cercanias_info {
     font-size: 40px;
     width: 50%; }
   .google_map iframe {
-    width: 650px;
-    height: 650px; }
+    width: 750px;
+    height: 600px; }
   .ubicacion .google_map {
     width: 60%; }
   /*responsive para el html "inicio"*/
@@ -355,7 +367,10 @@ main {
     width: 90%; }
     .galeria .contenedor_imagen .imagen {
       width: 100%;
-      height: 500px; } }
+      height: 500px; }
+  /*responsive para el html de "contacto"*/
+  .fondo_contacto {
+    height: 650px; } }
 
 @media (max-width: 1200px) {
   /*-------------------------------------------------*/
@@ -367,8 +382,8 @@ main {
   /*-------------------------------------------------*/
   /*responsive para el html de "ubicacion"*/
   .google_map iframe {
-    width: 950px;
-    height: 650px; } }
+    width: 650px;
+    height: 500px; } }
 
 /*responsive para el menu hamburguesa*/
 @media (max-width: 992px) {
@@ -411,10 +426,10 @@ main {
     height: 500px; }
   .ubicacion .cercanias_info {
     width: 100%;
-    font-size: 25px; }
+    font-size: 40px; }
   .ubicacion .cercanias_info p {
     width: 100%;
-    font-size: 25px; }
+    font-size: 35px; }
   /*responsive para el html "contacto*/
   .fondo_contacto {
     display: none; }
@@ -468,6 +483,10 @@ main {
   .google_map iframe {
     width: 160%;
     height: 400px; }
+  .ubicacion .cercanias_info {
+    font-size: 35px; }
+  .ubicacion .cercanias_info p {
+    font-size: 30px; }
   /*responsive para el html "servicios"*/
   .servicios .descripcion_servicios p {
     font-size: 25px; }
@@ -494,13 +513,21 @@ main {
     width: 60px;
     height: 80px; } }
 
-/*---------------------------------------------------------para mobile con menos de 375px de ancho-----------------------------------*/
-@media (max-width: 360px) {
+@media (max-width: 414px) {
+  /*-------------------------------------------------*/
   /*responsive para el html "ubicacion"*/
   .ubicacion .cercanias_info {
-    font-size: 20px; }
+    font-size: 25px; }
   .ubicacion .cercanias_info p {
-    font-size: 15px; }
+    font-size: 20px; } }
+
+/*---------------------------------------------------------para mobile con menos de 375px de ancho-----------------------------------*/
+@media (max-width: 375px) {
+  /*responsive para el html "ubicacion"*/
+  .ubicacion .cercanias_info {
+    font-size: 16px; }
+  .ubicacion .cercanias_info p {
+    font-size: 16px; }
   /*responsive para el html "servicios"*/
   .servicios .descripcion_servicios p {
     font-size: 20px; }
